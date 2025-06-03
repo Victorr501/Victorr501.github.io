@@ -29,12 +29,14 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: #FF5733;
     font-size: 3.5em;
+    text-align: center;
 }
 
 .cabecera p {
     font-size: 1.2em;
     line-height: 1.5;
     max-width: 1000px;
+    text-align: center;
 }
 
 #indice{
@@ -60,7 +62,6 @@ body{
 #indice ul li{
     margin: 10px;
     background-color: #FF5733;
-    
     padding: 3px 10px;
     border-radius: 3px;
     display: flex;
@@ -78,18 +79,120 @@ body{
     font-weight: bold;
 }
 
-.cabecera h1{
-    text-align: center;
-    font-size: 3em;
-}
 
-.cabecera p{
-    text-align: center;
-}
 
 #Sobre_mi {
     background-color: #3A3A3A;
     padding: 20px;
     border-radius: 3px;
     border: 1px solid #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+#Sobre_mi p{
+    max-width: 900px;
+    text-align: justify;
+}
+
+#Proyectos{
+    background-color: #3A3A3A;
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 3px;
+    border: 1px solid #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Proyectos .titulo_proyecto{
+    max-width: 900px;
+    text-align: justify;
+}
+
+#Proyectos .cuerpo_proyecto{
+    max-width: 900px;
+}
+
+#Proyectos .cuerpo_proyecto .proyecto1{
+    text-align: justify;
+}
+
+#Proyectos .cuerpo_proyecto .proyecto1 a{
+    background-color: #FF5733;
+    border-radius: 3px;
+    padding: 3px;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+
+#Proyectos .cuerpo_proyecto .proyecto1 a:hover{
+    background-color: #FF5733;
+    border-radius: 3px;
+    padding: 3px;
+    text-decoration: none;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+#Proyectos .cuerpo_proyecto .proyecto2{
+    text-align: justify;
+}
+
+#Proyectos .cuerpo_proyecto .proyecto2 a{
+    background-color: #FF5733;
+    border-radius: 3px;
+    padding: 3px;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+#Proyectos .cuerpo_proyecto .proyecto2 a:hover{
+    background-color: #FF5733;
+    border-radius: 3px;
+    padding: 3px;
+    text-decoration: none;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
+#Contactame{
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Contactame .contacto{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #3A3A3A;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+#Contactame .contacto a{
+    background-color: #FF5733;
+    border-radius: 3px;
+    padding: 3px;
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+
+#Contactame .contacto a:hover{
+    background-color: #FF5733;
+    border-radius: 3px;
+    padding: 3px;
+    text-decoration: none;
+    color: #f8f8f8;
+    font-weight: bold;
+}
+
