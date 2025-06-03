@@ -116,11 +116,11 @@ body{
     max-width: 900px;
 }
 
-#Proyectos .cuerpo_proyecto .proyecto1{
+#Proyectos .cuerpo_proyecto .proyecto{
     text-align: justify;
 }
 
-#Proyectos .cuerpo_proyecto .proyecto1 a{
+#Proyectos .cuerpo_proyecto .proyecto a{
     background-color: #FF5733;
     border-radius: 3px;
     padding: 3px;
@@ -130,7 +130,7 @@ body{
 }
 
 
-#Proyectos .cuerpo_proyecto .proyecto1 a:hover{
+#Proyectos .cuerpo_proyecto .proyecto a:hover{
     background-color: #FF5733;
     border-radius: 3px;
     padding: 3px;
@@ -139,27 +139,7 @@ body{
     font-weight: bold;
 }
 
-#Proyectos .cuerpo_proyecto .proyecto2{
-    text-align: justify;
-}
 
-#Proyectos .cuerpo_proyecto .proyecto2 a{
-    background-color: #FF5733;
-    border-radius: 3px;
-    padding: 3px;
-    text-decoration: none;
-    color: #444;
-    font-weight: bold;
-}
-
-#Proyectos .cuerpo_proyecto .proyecto2 a:hover{
-    background-color: #FF5733;
-    border-radius: 3px;
-    padding: 3px;
-    text-decoration: none;
-    color: #f8f8f8;
-    font-weight: bold;
-}
 
 #Contactame{
     padding: 3px;
