@@ -139,6 +139,44 @@ body{
     font-weight: bold;
 }
 
+.paginacion{
+    display: none;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.paginacion.activa{
+    display: flex;
+}
+
+.paginacion__boton{
+    background-color: #FF5733;
+    border: none;
+    border-radius: 4px;
+    color: #222222;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.paginacion__boton:hover:not(:disabled){
+    background-color: #ff754f;
+    color: #f8f8f8;
+}
+
+.paginacion__boton:disabled{
+    opacity: 0.6;
+    cursor: default;
+}
+
+.paginacion__boton--activo{
+    background-color: #f8f8f8;
+    color: #222222;
+}
+
 
 
 #Contactame{
