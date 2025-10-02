@@ -7,12 +7,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
         return;
     }
 
-    let paginaAcutal = 1;
+    let paginaActual = 1;
     const totalPaginas = Math.ceil(proyectos.length / proyectosPorPagina);
 
     const mostrarPagina = (pagina) => {
-        paginaAcutal = pagina;
-        const inicio = (inicio -1 ) * proyectosPorPagina;
+        paginaActual = pagina;
+        const inicio = (pagina -1 ) * proyectosPorPagina;
         const fin = inicio + proyectosPorPagina;
 
         proyectos.forEach((proyecto, indice) => {
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
             proyecto.style.display = visible ? '': 'none';
         });
 
-        
+        actualizarControles();
     };
 
     const crearBoton = (texto, pagina, deshabilitado = false) => {
@@ -41,19 +41,19 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const actualizarControles = () => {
         paginacion.innerHTML = '';
         
-        paginacion.appendChild(crearBoton('Anterior', paginaAcutal - 1, paginaAcutal === 1));
+        paginacion.appendChild(crearBoton('Anterior', paginaActual - 1, paginaActual === 1));
 
         for (let i = 1; i <= totalPaginas; i += 1){
-            const boton = crearBoton(i.toString(), i, i === paginaAcutal);
+            const boton = crearBoton(i.toString(), i, i === paginaActual);
 
-            if(i === paginaAcutal){
+            if(i === paginaActual){
                 boton.classList.add('paginacion__boton--activo');
             }
 
             paginacion.appendChild(boton);
         }
 
-        paginacion.append(crearBoton('Siguiente', paginaAcutal + 1, paginaAcutal === totalPaginas));
+        paginacion.append(crearBoton('Siguiente', paginaActual + 1, paginaActual === totalPaginas));
         paginacion.classList.add('activa');
     }
 
