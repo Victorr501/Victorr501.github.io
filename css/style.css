@@ -1,33 +1,31 @@
-/* PALETA DE COLORES ELEGIDA (Paleta 3: Minimalista y Moderna)
-   - Fondo Principal: #222222 (Gris Muy Oscuro/Casi Negro)
-   - Texto Principal: #F8F8F8 (Blanco Puro o Blanco muy claro)
-   - Color de Acento: #FF5733 (Rojo Anaranjado Vibrante)
-   - Elementos Secundarios/Bordes: #3A3A3A (Gris Oscuro)
-*/
-
+/* Paleta actualizada: tonos suaves y luminosos inspirados en azules y morados */
 
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: #222222;
-    color: #f8f8f8;
+    background: linear-gradient(135deg, #e3f2fd 0%, #ede7f6 50%, #f3e5f5 100%);
+    color: #2f2a4a;
+    min-height: 100vh;
+    margin: 0;
+    background-attachment: fixed;
 }
 
 .cabecera{
-    background-color:  #3A3A3A;
-    border: 1px solid  #444;
-    border-radius: 3px;
+    background: linear-gradient(135deg, rgba(99, 128, 255, 0.85), rgba(156, 106, 255, 0.75));
+    border: 1px solid  rgba(255, 255, 255, 0.35);
+    border-radius: 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 40px 20px;
     height: auto;
+    box-shadow: 0 20px 45px rgba(120, 94, 196, 0.25);
 }
 
 .cabecera h1{
     font-family: 'Montserrat', sans-serif;
-    color: #FF5733;
+    color: #ffffff;
     font-size: 3.5em;
     text-align: center;
 }
@@ -37,17 +35,19 @@ body{
     line-height: 1.5;
     max-width: 1000px;
     text-align: center;
+    color: rgba(255, 255, 255, 0.9);
 }
 
 #indice{
     margin: 20px 0px;
-    padding: auto;
-    background-color:  #3A3A3A;
-    border-radius: 3px;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(227, 242, 253, 0.85));
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #444;
+    border: 1px solid rgba(147, 138, 255, 0.25);
+    box-shadow: 0 10px 25px rgba(120, 94, 196, 0.15);
 }
 
 #indice ul{
@@ -60,83 +60,98 @@ body{
 }
 
 #indice ul li{
-    margin: 10px;
-    background-color: #FF5733;
-    padding: 3px 10px;
+    background: linear-gradient(135deg, #9fa8ff, #c5a6ff);
+    padding: 6px 14px;
+    border-radius: 999px;
     border-radius: 3px;
     display: flex;
     text-align: center;
+    box-shadow: 0 8px 20px rgba(110, 104, 255, 0.25);
 }
 
 #indice ul li a{
     text-decoration: none;
-    color: #444;
+    color: #2f2a4a;
     font-weight: bold;
 }
 
 #indice ul li a:hover{
-    color: #f8f8f8;
-    font-weight: bold;
+    color: #ffffff;
 }
 
 
 
 #Sobre_mi {
-    background-color: #3A3A3A;
-    padding: 20px;
-    border-radius: 3px;
-    border: 1px solid #444;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 40px 30px;
+    border-radius: 24px;
+    border: 1px solid rgba(99, 128, 255, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 18px 38px rgba(147, 138, 255, 0.18);
 }
 
 #Sobre_mi p{
     max-width: 900px;
     text-align: justify;
+    color: #3f365f;
 }
 
 #Proyectos{
-    background-color: #3A3A3A;
-    padding: 20px;
-    margin: 20px 0px;
-    border-radius: 3px;
-    border: 1px solid #444;
+    background: rgba(255, 255, 255, 0.78);
+    padding: 40px 30px;
+    margin: 40px 0px;
+    border-radius: 28px;
+    border: 1px solid rgba(147, 138, 255, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 22px 40px rgba(122, 108, 255, 0.18);
 }
 
 #Proyectos .titulo_proyecto{
     max-width: 900px;
     text-align: justify;
+    color: #3f365f;
 }
 
 #Proyectos .cuerpo_proyecto{
     max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
 }
 
 #Proyectos .cuerpo_proyecto .proyecto{
     text-align: justify;
+    background: rgba(237, 231, 246, 0.8);
+    padding: 24px;
+    border-radius: 20px;
+    border: 1px solid rgba(147, 138, 255, 0.15);
+    box-shadow: 0 16px 28px rgba(158, 134, 255, 0.15);
 }
 
 #Proyectos .cuerpo_proyecto .proyecto a{
-    background-color: #FF5733;
-    border-radius: 3px;
-    padding: 3px;
+    background: linear-gradient(135deg, #9fa8ff, #c5a6ff);
+    border-radius: 999px;
+    padding: 6px 12px;
     text-decoration: none;
-    color: #444;
+    color: #2f2a4a;
     font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 6px 16px rgba(110, 104, 255, 0.25);
 }
 
 
 #Proyectos .cuerpo_proyecto .proyecto a:hover{
-    background-color: #FF5733;
-    border-radius: 3px;
-    padding: 3px;
-    text-decoration: none;
-    color: #f8f8f8;
-    font-weight: bold;
+    background: linear-gradient(135deg, #7d89ff, #b494ff);
+    color: #ffffff;
 }
 
 .paginacion{
@@ -152,10 +167,10 @@ body{
 }
 
 .paginacion__boton{
-    background-color: #FF5733;
+    background: linear-gradient(135deg, #a3a8ff, #caa6ff);
     border: none;
-    border-radius: 4px;
-    color: #222222;
+    border-radius: 999px;
+    color: #2f2a4a;
     cursor: pointer;
     font-weight: bold;
     padding: 8px 12px;
@@ -163,8 +178,8 @@ body{
 }
 
 .paginacion__boton:hover:not(:disabled){
-    background-color: #ff754f;
-    color: #f8f8f8;
+    background: linear-gradient(135deg, #7d89ff, #b494ff);
+    color: #ffffff;
 }
 
 .paginacion__boton:disabled{
@@ -173,34 +188,38 @@ body{
 }
 
 .paginacion__boton--activo{
-    background-color: #f8f8f8;
-    color: #222222;
+    background: #ffffff;
+    color: #2f2a4a;
 }
 
 
 
 #Contactame{
-    padding: 3px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-self: center;
+    text-align: center;
 }
 
 #Contactame .contacto{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    background-color: #3A3A3A;
-    padding: 10px;
-    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(156, 106, 255, 0.18);
+    box-shadow: 0 12px 26px rgba(147, 138, 255, 0.18);
 }
 
 #Contactame .contacto a{
-    background-color: #FF5733;
-    border-radius: 3px;
-    padding: 3px;
+    background: linear-gradient(135deg, #9fa8ff, #c5a6ff);
+    border-radius: 999px;
+    padding: 6px 12px;
     text-decoration: none;
-    color: #444;
+    color: #2f2a4a;
     font-weight: bold;
 }
 
@@ -214,3 +233,18 @@ body{
     font-weight: bold;
 }
 
+@media(max-width: 768px){
+    .cabecera h1{
+        font-size: 2.5em;
+    }
+
+    #Proyectos .cuerpo_proyecto{
+        grid-template-columns: 1fr;
+    }
+
+    #Contactame .contacto{
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+    }
+}
