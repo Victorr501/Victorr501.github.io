@@ -216,6 +216,78 @@ body{
     text-transform: uppercase;
 }
 
+#Estudios{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 40px 30px;
+    margin: 40px 0;
+    border-radius: 28px;
+    border: 1px solid rgba(147, 138, 255, 0.2);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 22px 40px rgba(122, 108, 255, 0.16);
+}
+
+#Estudios .estudios{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    color: #3f365f;
+}
+
+#Estudios .estudios__intro{
+    text-align: center;
+}
+
+#Estudios .estudios__intro h2{
+    margin: 0 0 12px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Estudios .estudios__intro p{
+    margin: 0 auto;
+    max-width: 720px;
+}
+
+#Estudios .estudios__lista{
+    display: grid;
+    gap: 20px;
+}
+
+#Estudios .estudio{
+    display: grid;
+    grid-template-columns: minmax(120px, 200px) 1fr;
+    gap: 20px;
+    align-items: center;
+    background: linear-gradient(145deg, rgba(159, 168, 255, 0.25), rgba(197, 166, 255, 0.3));
+    border-radius: 22px;
+    border: 1px solid rgba(147, 138, 255, 0.2);
+    padding: 24px;
+    box-shadow: 0 18px 32px rgba(128, 110, 255, 0.18);
+}
+
+#Estudios .estudio__periodo{
+    font-weight: 700;
+    color: #2f2a4a;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+#Estudios .estudio__detalle h3{
+    margin: 0 0 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #2f2a4a;
+}
+
+#Estudios .estudio__detalle p{
+    margin: 4px 0;
+}
+
+#Estudios .estudio__detalle strong{
+    color: #2f2a4a;
+}
+
+
 #Proyectos{
     background: rgba(255, 255, 255, 0.75);
     padding: 40px 30px;
