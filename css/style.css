@@ -377,6 +377,31 @@ body{
     line-height: 1.4;
 }
 
+#Cursos .cursos__lista a {
+    display: inline-block;
+    background: linear-gradient(135deg, #9fa8ff, #c5a6ff);
+    color: #2f2a4a;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 999px;
+    box-shadow: 0 6px 18px rgba(110, 104, 255, 0.25);
+    transition: all 0.25s ease;
+    text-align: center;
+    max-width: fit-content;
+}
+
+#Cursos .cursos__lista a:hover {
+    background: linear-gradient(135deg, #7d89ff, #b494ff);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(110, 104, 255, 0.3);
+}
+
+#Cursos .cursos__lista a:active {
+    transform: scale(0.97);
+}
+
 #Contactame{
     padding: 40px 20px;
     display: flex;
