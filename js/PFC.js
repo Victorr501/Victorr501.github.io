@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const listaActualizaciones = document.querySelector('.blog-entradas__lista');
     const paginacion = document.getElementById('paginacion-actualizaciones');
-    const entradasPorPagina = 10;
+    const entradasPorPagina = 5;
 
     if (!listaActualizaciones) {
         return;
